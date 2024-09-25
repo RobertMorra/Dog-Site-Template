@@ -1,0 +1,276 @@
+/* Robert Morra */
+
+/* Light Theme (Default) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background-color: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #222222;
+    color: #f0f0f0;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #444444;
+    color: #f0f0f0;
+}
+
+body.dark-theme nav {
+    background-color: #000000;
+}
+
+body.dark-theme nav a {
+    color: #f0f0f0;
+}
+
+body.dark-theme #factButton {
+    background-color: #666666;
+    color: white;
+}
+
+body.dark-theme #factButton:hover {
+    background-color: #444444;
+}
+
+/* Auto-detect system color scheme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222222;
+        color: #f0f0f0;
+    }
+
+    header,
+    footer {
+        background-color: #444444;
+        color: #f0f0f0;
+    }
+
+    nav {
+        background-color: #000000;
+    }
+
+    nav a {
+        color: #f0f0f0;
+    }
+
+    #factButton {
+        background-color: #666666;
+        color: white;
+    }
+
+    #factButton:hover {
+        background-color: #444444;
+    }
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    border-bottom: 2px solid #f8b400;
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Fun Facts Section */
+#factDisplay {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Button */
+#factButton {
+    border: none;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+/* Media Queries */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 15px 0;
+    }
+
+    main {
+        width: 95%;
+        padding: 0;
+    }
+
+    header, footer {
+        padding: 30px 0;
+    }
+
+    #factButton {
+        width: 100%;
+        padding: 15px;
+    }
+
+    section img {
+        margin-top: 15px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Reduce padding for the header and footer */
+    header, footer {
+        padding: 20px 0;
+    }
+
+    /* Make the title font smaller on mobile */
+    header {
+        font-size: 24px;
+    }
+
+    /* Skinnier nav bar on mobile devices */
+    nav {
+        max-width: 90%; /* Restrict nav width */
+        margin: 0 auto; /* Center the nav */
+        padding: 10px 0; /* Reduce Y-axis padding */
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 5px 0; /* Reduce padding on Y-axis */
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    #factButton {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    section img {
+        margin-top: 10px;
+    }
+}
+
+/* iPhone 12/13/14 Pro Max (414px wide) */
+@media (max-width: 414px) {
+    nav {
+        max-width: 85%;
+    }
+}
+
+/* iPhone 12/13/14 (375px wide) */
+@media (max-width: 375px) {
+    nav {
+        max-width: 80%;
+    }
+}
