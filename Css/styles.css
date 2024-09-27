@@ -60,34 +60,9 @@ nav a {
     font-weight: bold;
     font-size: 22px;
 }
-
-/* Dark Theme */
-body.dark-theme {
-    background-color: #222222;
-    color: #f0f0f0;
-}
-
-body.dark-theme header,
-body.dark-theme footer {
-    background-color: #444444;
-    color: #f0f0f0;
-}
-
-body.dark-theme nav {
-    background-color: #000000;
-}
-
-body.dark-theme nav a {
-    color: #f0f0f0;
-}
-
-body.dark-theme #factButton {
-    background-color: #666666;
-    color: white;
-}
-
-body.dark-theme #factButton:hover {
-    background-color: #444444;
+nav a:hover {
+    background-color: #f8b400; /* Add hover effect for links */
+    padding: 10px;
 }
 
 /* Auto-detect system color scheme */
@@ -99,20 +74,21 @@ body.dark-theme #factButton:hover {
 
     header,
     footer {
-        background-color: #444444;
+        background-color: transparent;
         color: #f0f0f0;
     }
 
     nav {
-        background-color: #000000;
+        background-color: transparent;
     }
 
     nav a {
         color: #f0f0f0;
+        background-color: #222222 !important;
     }
 
     #factButton {
-        background-color: #666666;
+        background-color: transparent;
         color: white;
     }
 
@@ -146,13 +122,13 @@ section img {
     margin-top: 20px;
 }
 
-/* Fun Facts Section */
+
 #factDisplay {
     margin-top: 20px;
     font-size: 20px;
 }
 
-/* Button */
+
 #factButton {
     border: none;
     padding: 20px 30px;
@@ -161,18 +137,19 @@ section img {
     align-self: center;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px 0;
     font-size: 18px;
 }
 
-/* Media Queries */
+
 
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
-    nav {
+   
+   nav {
         flex-direction: column;
     }
 
@@ -221,7 +198,6 @@ footer {
         width: 100%;
         max-width: 85%; 
         box-sizing: border-box; 
-        background-color: transparent;
         
     }
 
@@ -229,6 +205,7 @@ footer {
     header h1 {
         font-size: 24px;
         margin: 0 auto;
+        
     }
 
     /* Skinnier nav bar on mobile devices */
@@ -237,15 +214,18 @@ footer {
         margin: 0 auto; 
         padding: 10px 0; 
         background-color: transparent;
+        
     }
 
     nav ul {
         flex-direction: column;
         padding: 5px 0;
+        
     }
 
     nav li {
         margin: 10px 0;
+        
     }
 
     nav a {
@@ -255,12 +235,7 @@ footer {
         text-align: center;
         border-radius: 5px;
         border: 2px solid #f8b400;
-        
-
-    }
-
-    nav a:hover {
-        background-color: #f30000; /* Add hover effect for links */
+        background-color: #f8b400;
     }
 
     #factButton {
