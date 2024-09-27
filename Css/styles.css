@@ -62,7 +62,12 @@ nav a {
     
 }
 nav a:hover {
-    background-color: #f8b400; /* Add hover effect for links */
+    background-color: #f8b400;
+    padding: 10px;
+    transform: scale(1.5);
+}
+#factButton:hover {
+    transform: scale(1.5);
     padding: 10px;
 }
 
@@ -85,13 +90,14 @@ nav a:hover {
 
     nav a {
         color: #f0f0f0;
-        background-color: #222222 !important;
         padding: 10px;
         transition: transform 1.2 ease, background-color 1.2 ease;
-        
     }
+
     nav a:hover {
         background-color: #f8b400 !important;
+        padding: 10px;
+        transform: scale(1.1);
     }
 
     #factButton {
@@ -102,7 +108,9 @@ nav a:hover {
     #factButton:hover {
         background-color: #f8b400 !important;
         transform: scale(1.1);
+        padding: 10px;
     }
+    
 }
 
 /* Main Content */
