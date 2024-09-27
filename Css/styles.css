@@ -107,7 +107,7 @@ nav a:hover {
 
     #factButton:hover {
         background-color: #f8b400 !important;
-        transform: scale(1.1);
+        transform: scale(1.50);
         padding: 10px;
     }
     
