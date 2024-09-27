@@ -216,11 +216,13 @@ footer {
     /* Adjust container to be centered with proper padding */
     header, footer {
         padding: 20px 0;
-        margin: 0 auto;
+        margin-left: 45px;
         text-align: center;
         width: 100%;
-        max-width: 90%; /* Restrict the container width and center */
-        box-sizing: border-box; /* Ensure padding doesn't exceed screen width */
+        max-width: 85%; 
+        box-sizing: border-box; 
+        background-color: transparent;
+        
     }
 
     /* Make the title font smaller on mobile */
@@ -231,9 +233,10 @@ footer {
 
     /* Skinnier nav bar on mobile devices */
     nav {
-        max-width: 90%; /* Restrict nav width */
-        margin: 0 auto; /* Center the nav */
-        padding: 10px 0; /* Reduce Y-axis padding */
+        max-width: 90%; 
+        margin: 0 auto; 
+        padding: 10px 0; 
+        background-color: transparent;
     }
 
     nav ul {
@@ -248,10 +251,12 @@ footer {
     nav a {
         font-size: 20px;
         padding: 10px;
-        background-color: black; /* Add black box around each link */
         display: block;
         text-align: center;
         border-radius: 5px;
+        border: 2px solid #f8b400;
+        
+
     }
 
     nav a:hover {
@@ -282,7 +287,7 @@ footer {
 /* iPhone 12/13/14 Pro Max (414px wide) */
 @media (max-width: 414px) {
     nav {
-        max-width: 85%;
+        max-width: 80%;
     }
 }
 
