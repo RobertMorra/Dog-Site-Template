@@ -28,6 +28,9 @@ header {
     text-align: center;
     padding: 40px 0;
     font-size: 32px;
+    margin: 0 auto;
+    width: 100%; /* Ensure the header spans the full width */
+    box-sizing: border-box;
 }
 
 /* Navigation */
@@ -210,14 +213,20 @@ footer {
         font-size: 16px;
     }
 
-    /* Reduce padding for the header and footer */
+    /* Adjust container to be centered with proper padding */
     header, footer {
         padding: 20px 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 90%; /* Restrict the container width and center */
+        box-sizing: border-box; /* Ensure padding doesn't exceed screen width */
     }
 
     /* Make the title font smaller on mobile */
-    header {
+    header h1 {
         font-size: 24px;
+        margin: 0 auto;
     }
 
     /* Skinnier nav bar on mobile devices */
@@ -229,7 +238,7 @@ footer {
 
     nav ul {
         flex-direction: column;
-        padding: 5px 0; /* Reduce padding on Y-axis */
+        padding: 5px 0;
     }
 
     nav li {
@@ -238,6 +247,15 @@ footer {
 
     nav a {
         font-size: 20px;
+        padding: 10px;
+        background-color: black; /* Add black box around each link */
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #f30000; /* Add hover effect for links */
     }
 
     #factButton {
