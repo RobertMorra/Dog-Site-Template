@@ -63,54 +63,7 @@ nav a {
 }
 nav a:hover {
     background-color: #f8b400;
-    padding: 10px;
-    transform: scale(1.5);
-}
-#factButton:hover {
-    transform: scale(1.5);
-    padding: 10px;
-}
-
-/* Auto-detect system color scheme */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222222;
-        color: #f0f0f0;
-    }
-
-    header,
-    footer {
-        background-color: transparent;
-        color: #f0f0f0;
-    }
-
-    nav {
-        background-color: transparent;
-    }
-
-    nav a {
-        color: #f0f0f0;
-        padding: 10px;
-        transition: transform 1.2 ease, background-color 1.2 ease;
-    }
-
-    nav a:hover {
-        background-color: #f8b400 !important;
-        padding: 10px;
-        transform: scale(1.1);
-    }
-
-    #factButton {
-        background-color: transparent !important; 
-        color: white;
-    }
-
-    #factButton:hover {
-        background-color: #f8b400 !important;
-        transform: scale(1.50);
-        padding: 10px;
-    }
-    
+    padding: 5px;
 }
 
 /* Main Content */
@@ -148,20 +101,61 @@ section img {
 #factButton {
     padding: 20px 30px;
     font-size: 20px;
-    cursor: pointer;
     align-self: center;
     background-color: #f8b400;
     border: 4px solid #f8b400;
 }
 
+#factButton:hover {
+    padding: 20px 30px;
+    background-color: #222222;
+    color: #ffffff;
+}
 
 footer {
     text-align: center;
     padding: 20px 0;
     font-size: 18px;
 }
+/* Auto-detect system color scheme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222222;
+        color: #f0f0f0;
+    }
 
+    header,
+    footer {
+        background-color: transparent;
+        color: #f0f0f0;
+    }
 
+    nav {
+        background-color: transparent;
+    }
+
+    nav a {
+        color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #f8b400;
+    }
+
+    nav a:hover {
+        background-color: #f8b400 !important;
+        padding: 10px;  
+    }
+
+    #factButton {
+        background-color: transparent !important; 
+        color: white;
+    }
+
+    #factButton:hover {
+        background-color: #f8b400 !important;
+        padding: 20px 30px;
+    }
+    
+}
 
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
@@ -222,7 +216,7 @@ footer {
     /* Make the title font smaller on mobile */
     header h1 {
         font-size: 28px;
-        margin: 0 auto;
+        margin: auto;
         
     }
 
@@ -254,6 +248,7 @@ footer {
         border-radius: 5px;
         border: 2px solid #f8b400;
         background-color: #f8b400;
+        margin-left: 16px;
     }
 
     #factButton {
