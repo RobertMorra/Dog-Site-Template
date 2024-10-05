@@ -22,7 +22,7 @@ main {
 
 /* Header */
 header {
-    background-color: #f8b400;
+    background: linear-gradient(to bottom,  #f8b400 , #333333);
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -115,6 +115,7 @@ section img {
 }
 
 footer {
+    background: linear-gradient(to bottom, #333333, #f8b400);
     text-align: center;
     padding: 20px 0;
     font-size: 18px;
